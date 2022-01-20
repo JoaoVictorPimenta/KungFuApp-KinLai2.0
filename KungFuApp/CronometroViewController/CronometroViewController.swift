@@ -11,15 +11,14 @@ class CronometroViewController: UIViewController {
     
     //label que mostra o tempo
     @IBOutlet weak var tempoNaTelaLabel: UILabel!
+    //criar um timer para o cronometro
+    var timer: Timer = Timer()
+    
     //variavel de tempo restante
     var tempoRestante: Int = 30
-    //criar um timer para o cronometro
-    var timer: Timer!
+    
     //variavel para verificar se o botao está acionado
     var estaTocando: Bool = false
-    
-    
-    
     
     @IBOutlet weak var IlustracaoExercicioImageView: UIImageView!
     @IBOutlet weak var nomeExercicioLabel: UILabel!
@@ -39,25 +38,18 @@ class CronometroViewController: UIViewController {
 
     }
     
-    
-    
-    
-    
-    
     //botão iniciar/resumir acionado
     @IBAction func botaoIniciarResumirAcionado(_ sender: Any) {
-        //aplicar objetivos pra o timer
-        if !estaTocando{
-            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(step), userInfo: nil, repeats: true)
+
+        if (estaTocando) {
+            estaTocando = false
+            timer.invalidate()
+        }
+        else {
             estaTocando = true
+            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerCounter), userInfo: nil, repeats: true)
         }
 
-    }
-    
-    //botão pausar acionado
-    @IBAction func botaoPausarAcionado(_ sender: Any) {
-        timer.invalidate()
-        estaTocando = false
     }
     
     //botão reiniciar acionado
@@ -68,8 +60,8 @@ class CronometroViewController: UIViewController {
         estaTocando = false
     }
     
-    //criando a função Objective C step, mostrada no .scheduledTimer
-    @objc func step(){
+    //criando a função Objective C timerCounter, mostrada no .scheduledTimer
+    @objc func timerCounter() -> Void{
         if tempoRestante > 0{
             tempoRestante -= 1
         }
