@@ -31,41 +31,40 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Aqui está uma sugestão de estudo:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Et7-jP-BnI">
-                                                <rect key="frame" x="20" y="48" width="394" height="18"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Sugestão de estudo" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Et7-jP-BnI">
+                                                <rect key="frame" x="20" y="48" width="394" height="33"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ktf-2d-BQO">
-                                                <rect key="frame" x="20" y="76" width="374" height="313"/>
+                                                <rect key="frame" x="20" y="86" width="374" height="313"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="374" id="Y4H-yR-f5s"/>
                                                     <constraint firstAttribute="height" constant="313" id="kVE-xv-kZZ"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Para treino, aqui está uma indicação:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85D-t5-vTZ">
-                                                <rect key="frame" x="20" y="419" width="394" height="18"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Sugestão de treino" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85D-t5-vTZ">
+                                                <rect key="frame" x="20" y="429" width="394" height="33"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="18" id="dve-qP-Apa"/>
+                                                    <constraint firstAttribute="height" constant="33" id="dve-qP-Apa"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qJ6-eG-pnE">
-                                                <rect key="frame" x="20" y="447" width="374" height="343"/>
+                                                <rect key="frame" x="20" y="467" width="374" height="323"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="0.074509803920000006" green="0.074509803920000006" blue="0.074509803920000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="Ktf-2d-BQO" firstAttribute="top" secondItem="Et7-jP-BnI" secondAttribute="bottom" constant="10" id="2Hq-6R-QPA"/>
                                             <constraint firstAttribute="trailing" secondItem="qJ6-eG-pnE" secondAttribute="trailing" constant="20" id="4zH-Z8-Nu6"/>
                                             <constraint firstItem="qJ6-eG-pnE" firstAttribute="leading" secondItem="Ces-Q0-Wvp" secondAttribute="leading" constant="20" id="8h7-1C-DYl"/>
                                             <constraint firstItem="Xfm-g9-piT" firstAttribute="top" secondItem="Ces-Q0-Wvp" secondAttribute="top" constant="20" id="C8g-NG-VVU"/>
                                             <constraint firstItem="85D-t5-vTZ" firstAttribute="top" secondItem="Ktf-2d-BQO" secondAttribute="bottom" constant="30" id="IXq-57-KoX"/>
-                                            <constraint firstItem="qJ6-eG-pnE" firstAttribute="top" secondItem="85D-t5-vTZ" secondAttribute="bottom" constant="10" id="Mex-Zx-33v"/>
-                                            <constraint firstItem="qJ6-eG-pnE" firstAttribute="top" secondItem="85D-t5-vTZ" secondAttribute="bottom" constant="10" id="Mgn-BB-KM5"/>
+                                            <constraint firstItem="qJ6-eG-pnE" firstAttribute="top" secondItem="85D-t5-vTZ" secondAttribute="bottom" constant="5" id="Mex-Zx-33v"/>
+                                            <constraint firstItem="qJ6-eG-pnE" firstAttribute="top" secondItem="85D-t5-vTZ" secondAttribute="bottom" constant="5" id="Mgn-BB-KM5"/>
                                             <constraint firstItem="Xfm-g9-piT" firstAttribute="leading" secondItem="Ces-Q0-Wvp" secondAttribute="leading" constant="20" id="Nb6-8P-90g"/>
                                             <constraint firstAttribute="trailing" secondItem="Xfm-g9-piT" secondAttribute="trailing" id="YNQ-e4-MqG"/>
                                             <constraint firstItem="Et7-jP-BnI" firstAttribute="top" secondItem="Xfm-g9-piT" secondAttribute="bottom" constant="10" id="dLI-fg-kc6"/>
@@ -75,6 +74,7 @@
                                             <constraint firstAttribute="trailing" secondItem="Ktf-2d-BQO" secondAttribute="trailing" constant="20" id="hBO-aZ-Vt8"/>
                                             <constraint firstAttribute="bottom" secondItem="qJ6-eG-pnE" secondAttribute="bottom" constant="10" id="j93-Pp-8iL"/>
                                             <constraint firstItem="Et7-jP-BnI" firstAttribute="leading" secondItem="Ces-Q0-Wvp" secondAttribute="leading" constant="20" id="poJ-KZ-cat"/>
+                                            <constraint firstItem="Ktf-2d-BQO" firstAttribute="top" secondItem="Et7-jP-BnI" secondAttribute="bottom" constant="5" id="rMb-zA-moK"/>
                                             <constraint firstAttribute="trailing" secondItem="85D-t5-vTZ" secondAttribute="trailing" id="thA-Dg-zTo"/>
                                             <constraint firstItem="Ktf-2d-BQO" firstAttribute="leading" secondItem="Ces-Q0-Wvp" secondAttribute="leading" constant="20" id="uVW-dD-cdT"/>
                                             <constraint firstAttribute="trailing" secondItem="Et7-jP-BnI" secondAttribute="trailing" id="vpO-pb-JTh"/>
@@ -303,13 +303,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="titulo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A6O-ZA-HET">
-                                <rect key="frame" x="20" y="140" width="374" height="38.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                                <rect key="frame" x="20" y="140" width="374" height="33.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kcR-Ss-xiK">
-                                <rect key="frame" x="20" y="188.5" width="374" height="393.5"/>
+                                <rect key="frame" x="20" y="183.5" width="374" height="398.5"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <integer key="value" value="10"/>
@@ -762,8 +762,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="IOr-FY-Xfc"/>
-        <segue reference="Z49-Kz-hfw"/>
+        <segue reference="qf5-e3-CZe"/>
+        <segue reference="1Ry-Ur-g66"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="books.vertical" catalog="system" width="128" height="107"/>
