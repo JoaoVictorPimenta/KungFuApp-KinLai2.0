@@ -170,7 +170,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" indicatorStyle="white" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ye-xg-ecT">
-                                <rect key="frame" x="37" y="489.5" width="340" height="303.5"/>
+                                <rect key="frame" x="37" y="479.5" width="340" height="313.5"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
@@ -196,7 +196,7 @@
                             <constraint firstItem="2Rk-Wc-Ni8" firstAttribute="top" secondItem="BDx-E7-Arl" secondAttribute="bottom" constant="7.5" id="9rM-2Z-kgB"/>
                             <constraint firstItem="BDx-E7-Arl" firstAttribute="leading" secondItem="6Tj-uR-Ujq" secondAttribute="leading" constant="37" id="Slt-4C-sQN"/>
                             <constraint firstItem="6Tj-uR-Ujq" firstAttribute="trailing" secondItem="0ye-xg-ecT" secondAttribute="trailing" constant="37" id="ebQ-X8-mh9"/>
-                            <constraint firstItem="0ye-xg-ecT" firstAttribute="top" secondItem="2Rk-Wc-Ni8" secondAttribute="bottom" constant="20" id="eew-KK-7aI"/>
+                            <constraint firstItem="0ye-xg-ecT" firstAttribute="top" secondItem="2Rk-Wc-Ni8" secondAttribute="bottom" constant="10" id="eew-KK-7aI"/>
                             <constraint firstItem="6Tj-uR-Ujq" firstAttribute="trailing" secondItem="BDx-E7-Arl" secondAttribute="trailing" constant="20" id="s7Q-R2-y3q"/>
                             <constraint firstItem="6Tj-uR-Ujq" firstAttribute="trailing" secondItem="2Rk-Wc-Ni8" secondAttribute="trailing" constant="37" id="ymc-U6-psv"/>
                         </constraints>
@@ -404,11 +404,10 @@
                 <tabBarController interfaceStyle="dark" id="iO1-lA-ner" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="Yuh-Lr-vCy"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics" barStyle="black"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" id="DXk-IO-lbB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.76078431369999999" green="0.58039215690000001" blue="0.20392156859999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="selectedImageTintColor" red="0.76078431372549016" green="0.58039215686274503" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
@@ -678,7 +677,7 @@
         <scene sceneID="F4e-D9-YxM">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cXD-kh-ZQ9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Estudo" image="books.vertical" catalog="system" id="iJW-4w-x1a"/>
+                    <tabBarItem key="tabBarItem" title="Estudo" image="books.vertical.fill" catalog="system" id="iJW-4w-x1a"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" largeTitles="YES" id="Qwi-gP-82k">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
@@ -734,10 +733,10 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="IOr-FY-Xfc"/>
-        <segue reference="1Ry-Ur-g66"/>
+        <segue reference="ssP-0g-T7n"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="books.vertical" catalog="system" width="128" height="107"/>
+        <image name="books.vertical.fill" catalog="system" width="128" height="109"/>
         <image name="figure.walk" catalog="system" width="95" height="128"/>
         <image name="playpause.fill" catalog="system" width="128" height="70"/>
         <image name="repeat" catalog="system" width="128" height="98"/>
