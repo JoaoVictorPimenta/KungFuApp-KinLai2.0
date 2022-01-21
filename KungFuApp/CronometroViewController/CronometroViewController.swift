@@ -25,10 +25,6 @@ class CronometroViewController: UIViewController {
     var contador: Int!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        //arredondamento
-        tempoNaTelaLabel.layer.cornerRadius = 10
-        tempoNaTelaLabel.layer.masksToBounds = true
 
         
         
