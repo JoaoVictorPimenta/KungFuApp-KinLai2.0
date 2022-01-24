@@ -36,7 +36,8 @@ class CronometroViewController: UIViewController {
     
     //botão iniciar/resumir acionado
     @IBAction func botaoIniciarResumirAcionado(_ sender: Any) {
-
+        let generator = UISelectionFeedbackGenerator()
+        generator.selectionChanged()
         if (estaTocando) {
             estaTocando = false
             timer.invalidate()
@@ -50,6 +51,8 @@ class CronometroViewController: UIViewController {
     
     //botão reiniciar acionado
     @IBAction func botaoReiniciarAcionado(_ sender: Any) {
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.success)
         timer.invalidate()
         tempoRestante = 30
         tempoNaTelaLabel.text = "\(tempoRestante)s"
