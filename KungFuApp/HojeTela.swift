@@ -4,7 +4,7 @@
 //
 //  Created by João Victor Ferreira Pimenta on 26/07/21.
 //
-
+//primeira modificação no git foi essa frase.
 import UIKit
 
 class HojeViewController: UIViewController {
@@ -36,17 +36,18 @@ class HojeViewController: UIViewController {
         
         
         //
-        idGolpe = Int.random(in: 0..<golpeSugestao.count)
+        idGolpe = Int.random(in: 0..<golpeSugestao.count-1)
         sugestaoEstudoImageView.image = golpeSugestao[idGolpe].imagens
         
         sugestaoTreinoImageView.image = exercicios[idTreino].imagemExercicio
-        if idGolpe > chutes.count{
+        if idGolpe >= chutes.count{
             tipoGolpe = "socos"
             idGolpe = idGolpe - chutes.count
         }
-        else{
+        else if (idGolpe == 0 || idGolpe == 1) {
          tipoGolpe = "chutes"
         }
+       
         
         //Procedimento de acionamento da imagem
         //Passo 1: Habilitar a interação com o usuário
